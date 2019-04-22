@@ -1,0 +1,16 @@
+{:source-paths
+ ["src"]
+
+ :dependencies
+ []
+
+ :builds
+ {:normal {:target :browser
+           :output-dir "public/js"
+           :asset-path "/js"
+           :modules {:main {:entries [sdii.normal]}}}
+
+  :dynamic {:target :browser
+            :output-dir "public/js"
+            :asset-path "/js"
+            :modules {:main {:entries [sdii.dynamic]}}}}}
